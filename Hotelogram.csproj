@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{150B7A18-3EE7-4BA2-981D-31FE9D8BE50F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotelogram</RootNamespace>
+    <AssemblyName>Hotelogram</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Hotelogram.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HotelogramMulti.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bill.cs" />
+    <Compile Include="BorderedFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAbout.Designer.cs">
+      <DependentUpon>DAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAddAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAddAction.Designer.cs">
+      <DependentUpon>DAddAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAddEmployee.Designer.cs">
+      <DependentUpon>DAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAddFurniture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAddFurniture.Designer.cs">
+      <DependentUpon>DAddFurniture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAddRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAddRoom.Designer.cs">
+      <DependentUpon>DAddRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="DBillInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBillInfo.Designer.cs">
+      <DependentUpon>DBillInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGuestCheckout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DGuestCheckout.Designer.cs">
+      <DependentUpon>DGuestCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DLogin.Designer.cs">
+      <DependentUpon>DLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAddGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAddGuest.Designer.cs">
+      <DependentUpon>DAddGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DViewReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DViewReports.Designer.cs">
+      <DependentUpon>DViewReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="FEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmployees.Designer.cs">
+      <DependentUpon>FEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGuests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGuests.Designer.cs">
+      <DependentUpon>FGuests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHelper.cs" />
+    <Compile Include="FQueryDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQueryDatabase.Designer.cs">
+      <DependentUpon>FQueryDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRooms.Designer.cs">
+      <DependentUpon>FRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Furniture.cs" />
+    <Compile Include="Guest.cs" />
+    <Compile Include="FMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMainMenu.Designer.cs">
+      <DependentUpon>FMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermissionInfo.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="Time.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Utilities.cs" />
+    <EmbeddedResource Include="DAbout.resx">
+      <DependentUpon>DAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAddAction.resx">
+      <DependentUpon>DAddAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dAddEmployee.resx">
+      <DependentUpon>DAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAddFurniture.resx">
+      <DependentUpon>DAddFurniture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAddRoom.resx">
+      <DependentUpon>DAddRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBillInfo.resx">
+      <DependentUpon>DBillInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DGuestCheckout.resx">
+      <DependentUpon>DGuestCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DLogin.resx">
+      <DependentUpon>DLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAddGuest.resx">
+      <DependentUpon>DAddGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DViewReports.resx">
+      <DependentUpon>DViewReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmployees.resx">
+      <DependentUpon>FEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGuests.resx">
+      <DependentUpon>FGuests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMainMenu.resx">
+      <DependentUpon>FMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQueryDatabase.resx">
+      <DependentUpon>FQueryDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRooms.resx">
+      <DependentUpon>FRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\Database.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question_win10_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_win10_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guest_win10_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485377478_door_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485377761_invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_win10_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_win10_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotelogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotelogram_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485389486_door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1485389813_door_out_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_win10_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redcross_win10_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotelogram_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IT New Thicker 1080x1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IT Hotelogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KTO_Karatay_Üniversitesi_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotelogram, Label, Segoe UI, Shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IT Hotelogram1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hotelogram.ico" />
+    <Content Include="HotelogramMulti.ico" />
+    <Content Include="Hotelogram_16.ico" />
+    <None Include="Resources\question_win10_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
